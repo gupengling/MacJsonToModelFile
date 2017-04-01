@@ -200,7 +200,7 @@
         
         
         NSString *fileHeaderH = [NSString stringWithFormat:@"\n\n//\n// %@\n// Created by gupengling on %@\n//\n",[NSString stringWithFormat:@"%@.h",fileName],[NSDate date]];
-        NSString *hFile1 = @"\n\n#import <UIKit/UIKit.h>\n\n";
+        NSString *hFile1 = @"\n\n#import <Foundation/Foundation.h>\n\n";
         
         __block NSString *hWrite = [NSString stringWithFormat:@"%@%@",fileHeaderH,hFile1];
         
