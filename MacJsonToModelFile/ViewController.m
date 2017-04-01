@@ -117,10 +117,14 @@
                 }
                 
                 
-            } else{
+            }else if([type rangeOfString:@"NSCFNumber"].length > 0) {
+                content =[NSString stringWithFormat:@"@property (nonatomic, assign)  NSInteger %@;\n",key];
+            }
+            else{
                 content =[NSString stringWithFormat:@"@property (nonatomic, copy)  NSString *%@;\n",key];
             }
             hContent=[hContent stringByAppendingString:content];
+            
             
         }
         
